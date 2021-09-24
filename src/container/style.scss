@@ -1,0 +1,57 @@
+//header
+
+.header {
+  height: 58px;
+  background-color: #212529;
+  color: aliceblue;
+  .header-logo {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    .logo {
+      width: 100%;
+    }
+  }
+  .header-search {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    .search {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background-color: #383b3f;
+      font-size: 24px;
+      color: #ddd;
+      margin-right: 20px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.content {
+  padding-top: 20px;
+  display: flex;
+  .side_bar {
+    width: 250px;
+  }
+  .content-list {
+    padding-left: 20px;
+  }
+}
+
+.footer {
+  position: relative;
+  border-top: 1px solid #c5c5c5;
+  margin-top: 30px;
+  .footerChain {
+    padding: 10px;
+    div {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      padding: 8px 0;
+    }
+  }
+}

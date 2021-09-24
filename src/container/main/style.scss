@@ -1,0 +1,101 @@
+.listAddress-list {
+  padding-top: 20px;
+  display: flex;
+  margin-bottom: 16px;
+  .listAddress-item {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    padding: 5px;
+    border-radius: 3px;
+    align-items: center;
+    margin-right: 16px;
+    padding: 8px 16px;
+    span {
+      width: 100px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .listAddress-close {
+      display: none;
+      position: absolute;
+      font-size: 16px;
+      align-items: center;
+      font-weight: bold;
+      z-index: 1000;
+      top: 7px;
+      right: 10px;
+      padding: 0 8px;
+      &:hover {
+        background-color: #8e8e8e;
+        border-radius: 3px;
+      }
+    }
+    &:hover {
+      padding-right: 40px;
+      .listAddress-close {
+        display: block;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+.balance-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  span {
+    color: #ff4c8b;
+    font-weight: bold;
+  }
+}
+
+.balance-filter {
+  .balance-filter_list {
+    display: flex;
+    padding: 0;
+    .balance-filter_item {
+      list-style: none;
+      padding: 4px 8px;
+      margin: 0 4px;
+      background-color: #efefef;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &.active,
+      &:hover {
+        background-color: #8e8e8e;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.table-transaction {
+  .table-transaction-lable {
+    text-align: center;
+  }
+  .table-transaction_item {
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    &.hover:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &.item_in {
+      color: #00d8d5;
+      font-weight: bold;
+    }
+    &.item_out {
+      color: #ff4c8b;
+      font-weight: bold;
+    }
+  }
+}
